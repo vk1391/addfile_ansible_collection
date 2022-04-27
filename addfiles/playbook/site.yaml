@@ -1,0 +1,8 @@
+---
+- name: Assert create file_module
+  hosts: localhost
+  tasks:
+    - name: Create file
+      mynamespace.addfiles.add_file:
+        path: another_one.txt
+        content: "testtest"
